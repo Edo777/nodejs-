@@ -1,2 +1,3 @@
 'use strict'
-setInterval(function(){console.log("Helloooooo");}, 3000);
+let counter = 0;
+let k = setInterval(function(){console.log(`Called ${++counter} times`); if(counter === 6){clearInterval(k);}}, 1000);

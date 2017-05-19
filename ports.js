@@ -6,8 +6,10 @@ const upper = (str) => {
 const low = (str) => {
     return str.toLowerCase();
 }
+const PORT = 8080;
 //Fat arrow function , lambda function
 module.exports = {
     one : upper,
-    two : low
+    two : low,
+    PORT
 }

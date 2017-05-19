@@ -8,7 +8,8 @@ const server = http.createServer( (req,res)=>{
         res.end(`
             <!doctype html>
             <body>
-                <h1> ${p.upper(__dirname)}</h1>
+                <h1> ${p.one(__dirname)}</h1>
+                <h1> ${p.two(__dirname)}</h1>
                 <p>What a body =P</p>
             </body>
         `)

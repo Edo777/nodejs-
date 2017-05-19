@@ -17,7 +17,7 @@ const retVal = (myList)=>{
     retObj['body'] = bodyArray;
     return retObj;
 }
+}
     module.exports = {
         retVal
     }
-}

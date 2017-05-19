@@ -1,5 +1,6 @@
 'use strict';
 
+const k = require('./ClassWork');
 const net = require('net');
 const sock = new net.Socket;
 
@@ -16,9 +17,7 @@ const total_data = [];
 
 sock.on('data', d => total_data.push(d));
 
-sock.on('end',
-
-    () => console.log(total_data.reduce((prev, total)=> prev + total)));
+sock.on('end',() => k.retVal(total_data));
 
 sock.connect({
     port: 80,
